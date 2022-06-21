@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(( V-Mart )) SaNdEeP KuMaR </title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/f25b471375.js" crossorigin="anonymous"></script>
+</head>
+<link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+<body>
+    <header>
+        <div class="ffix_header">
+            <div class="wrapper">
+                <div class="top_custom_navigation">
+                    <ul>
+                        <li>
+                        <a href="javascript:void(0);" style="display: none;">Gift Card</a>
+                    </li>
+                    <li>
+                    <a href="">
+                        Track Order
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Contact Us
+                    </a>
+                </li>
+                    </ul>
+                    <div class="apps_icons">
+                        <span>Download Our Apps</span>
+                        <a href="" class="google_play"></a>
+                        <a href="javascript:void(0);" class="apple_play"></a>
+
+                    </div>
+
+                </div>
+                <div class="logo">
+                    <a href="" title="Vmart">
+                        <img src="img/logo.png" alt="vmart">
+
+                    </a>
+
+                </div>
+                <div class="user_navigation">
+                    <ul>
+                        <li id="sign-in">
+                            <a href="javascript:void(0);" style="display:block;">
+                                Sign In
+                            </a>
+
+                        </li>
+                        <li id="wishlist_d">
+                            <a href="javascript:void(0);" onclick="loginPopup('wishlist');" class="whishlist_ic">
+                            <span id="wishlist_val" style="display: none;"></span>
+                        </a>
+
+                        </li>
+                    </ul>
+                    <div class="store_locator">
+                        <a href="#">Store Locator</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+    <nav class="main_navigation">
+        <div class="ffix">
+            <div class="wrapper">
+                <div id="header_nav">
+                    <ul data-reactroot>
+                        <li id="nav_65">
+                            <a data-nid="65">
+                                Men
+                            </a>
+                            <div class="menu_wrap_sub" id="rightpanel_65"></div>
+
+                        </li>
+                        <li id="nav_66">
+                            <a data-nid="66">
+                                Women
+                            </a>
+                            <div class="menu_wrap_sub" id="rightpanel_66"></div>
+
+                        </li>
+                        <li id="nav_70">
+                            <a data-nid="70">
+                                Kids
+                            </a>
+                            <div class="menu_wrap_sub" id="rightpanel_70"></div>
+
+                        </li>
+                        <li id="nav_69">
+                            <a data-nid="69">
+                                Home Mart
+                            </a>
+                            <div class="menu_wrap_sub" id="rightpanel_69"></div>
+
+                        </li>
+                        <li id="nav_77">
+                            <a data-nid="77">
+                                Offers
+                            </a>
+                            <div class="menu_wrap_sub" id="rightpanel_77"></div>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="search">
+                    <span id="search">
+                        <input type="text" id="search_input_field" placeholder="Search for products, brands & more" autocomplete="off">
+                        <input type="submit" id="search_icon_id" value>
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/Bannerethnicweb 4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/Bannerholidayweb.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/Bannerkidsweb 1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/Bannersummerweb 3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/MainBunlimteweb 5.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/Bannerethnicweb 4.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    
+    <div class="container" id="mainblcok">
+        <div class="wrapper" id="mainwrapper">
+            <section class="banner_section">
+                <div class="wrapper" id="carousel1"></div>
+            </section>
+            <section class="b_section bnk_offers" id="233">
+                <div data-reactroot class="shd_box">
+                    <ul>
+                        <li>
+                        <img src="img/strip01yyyyy.jpg" alt="Strip 1" title="Strip 1" width="100%">
+                    </li>
+                    <li>
+                        <img src="img/GreenStip1.jpg" alt="Strip 2" title="Strip 2" width="100%">
+                    </li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <!-- <section class="b_section promotion_block" id="240">
+                <div data-reactroot class="shd_box">
+                    <div class="tab_carousel slick-slider">
+                        <ul>
+                            <li>
+                                <a href="">
+
+                                    <img src="img/DivisionM01.jpg" alt="Men" title="Men">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/DivisionM02 2.jpg" alt="Men" title="Men">
+
+                                </a>
+                            </li>
+                            <li>
+                                <img src="img/DivisionMay111111 3.jpg" alt="Women" title="Women">
+                            </li>
+                            <li>
+                                <img src="img/DivisionMay22222 4.jpg" alt="Women" title="Women">
+                            </li>
+                            <li>
+                                <img src="img/DivisionM05 5.jpg" alt="Boy" title="Boy">
+                            </li>
+                            <li>
+                                <img src="img/DivisionM06 6.jpg" alt="Girl" title="Girl">
+                            </li>
+                            <li>
+                                <img src="img/DivisionM07 7.jpg" alt="Infant Boy" title="Infant Boy">
+                            </li>
+                            <li>
+                                <img src="img/DivisionM08 8.jpg" alt="Unlimited" title="Unlimited">
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </section> -->
+            <section class="b_section promotion_block">
+                <div data-reactroot class="shd_box">
+                    <div class="tab_carousel slick-slider" >
+                        <ul>
+                            <li>
+                                <a href="#"><img src="img/DivisionM01.jpg" alt="Men" title="Men"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/DivisionM02 2.jpg" alt="Men" title="Men"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/DivisionMay111111 3.jpg" alt="Men" title="Men"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/DivisionMay22222 4.jpg" alt="Men" title="Men"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/DivisionM05 5.jpg" alt="Men" title="Men"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/DivisionM06 6.jpg" alt="Men" title="Men"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/DivisionM07 7.jpg" alt="Men" title="Men"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/DivisionM08 8.jpg" alt="Men" title="Men"></a>
+                            </li>
+                        </ul>
+  
+                    </div>
+  
+                </div>
+            </section>
+            <section class="b_section promotion_block1" id="236">
+                <div data-reactroot class="shd_box">
+                    <table width="100%" cellspacing="0" cellpadding="0" style="border: 0px;">
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: middle;">
+                                    <img src="img/ComboPack05.jpg" alt="4" title="4">
+
+                                </td>
+                                <td style="vertical-align: middle;">
+                                    <div class="tbl_wrap">
+                                        <table width="100%" cellspacing="10" cellpadding="0" style="border: 0px;">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">
+                                                            View Collection
+                                                        </a>
+                                                        <!-- <a href="">
+                                                            View Collection
+                                                        </a> -->
+                                                        <img src="img/ComboPack01 2.jpg" alt="1" title="1">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href=""> View Collection</a>
+                                                        <img src="img/ComboPack02 3.jpg" alt="3" title="3">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/ComboPack03 4.jpg" alt="5" title="5">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/ComboPack01 2.jpg" alt="4" title="4">
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+            <section class="b_section promotion_block1" id="132">
+                <div data-reactroot class="shd_box">
+                    <table width="100%" cellspacing="0" cellpadding="0" style="border: 0px;">
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: middle;">
+                                    <img src="img/pricestorebanner2211.jpg" alt="Price Point" title="Price Point">
+
+                                </td>
+                                <td style="vertical-align: middle;">
+                                    <div class="tbl_wrap">
+                                        <table width="100%" tbl_wrap="10" cellpadding="0" style="border: 0px;">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/pricestorebanner33 1.jpg" alt="199" title="199">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/pricestorebanner44 2.jpg" alt="299" title="299">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/pricestorebanner55 3.jpg" alt="399" title="399">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/pricestorebanner66 4.jpg" alt="499" title="499">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/pricestorebanner77 5.jpg" alt="Missed" title="Missed">
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+            <section class="b_section promotion_block">
+                <div data-reactroot class="shd_box">
+                <div class="tab_carousel slick-slider">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="img/Divisionpart7 111.jpg" alt="Men" title="Men"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/Divisionpart8 22.jpg" alt="Men" title="Men"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/Divisionpart8 22.jpg" alt="Men" title="Men"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/Divisionpart7 111.jpg" alt="Men" title="Men"></a>
+                        </li>
+                    </ul>
+                    </ul>
+
+                </div>
+            </div>
+
+            </section>
+            <section class="b_section promotion_block1">
+                <div data-reactroot class="shd_box">
+                    <table width="100%" cellspacing="0" cellpadding="0" style="border: 0px;">
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: middle;">
+                                    <img src="img/destop11 1.jpg" alt="T-Shirts" title="T-Shirts">
+
+                                </td>
+                                <td style="vertical-align: middle;">
+                                    <div class="tbl_wrap">
+                                        <table width="100%" cellspacing="10" cellpadding="0" style="border: 0px;">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/sando01 2.jpg" alt="Sandos" title="Sandos">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/sando03 22.jpg" alt="Hooded T-shirt" title="Hooded T-shirt">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/sando04 333.jpg" alt="HOODED T-Shirt" title="HOODED T-Shirt">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/sando05 44.jpg" alt="Round Neck T-Shirt" title="Round Neck T-Shirt">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/sando06 55.jpg" alt="Stripe T- Shirt" title="Stripe T- Shirt">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/sando07 66.jpg" alt="V Neck T-Shirt" title="V Neck T-Shirt">
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+                
+            </section>
+            <section class="b_section promotion_block">
+                <div data-reactroot class="shd_box">
+                    <div class="tab_carousel slick-slider">
+                        <ul>
+                            <li>
+                                <a href=""><img src="img/Divisionpart5 1111111111111111111.jpg" alt="Women comfort" title="Women comfort"></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="img/Divisionpart6 ............jpg" alt="Men Comfort" title="Men Comfort"></a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="b_section promotion_block1">
+                <div data-reactroot class="shd_box">
+                    <table width="100%" cellspacing="0" cellpadding="0" style="border: 0px;">
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: middle;">
+                                    <img src="img/productweb banner282  111.jpg" alt="Price Point" title="Price Point">
+
+                                </td>
+                                <td style="vertical-align: middle;">
+                                    <div class="tbl_wrap">
+                                        <table width="100%" cellspacing="10" cellpadding="0" style="border: 0px;">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/boycoordinatedset28 11.jpg" alt="Women Dresses" title="Women Dresses">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/Girlcoordinatedset28  222.jpg" alt="Girl Cordinated Set" title="Girl Cordinated Set">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/boysPyjama28.jpg" alt="Boys Pyjama" title="Boys Pyjama">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/GirlHarems28.jpg" alt="girl harem" title="girl harem">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/boysshorts28.jpg" alt="Treading-2" title="Treading-2">
+
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/GirlsFrock28.jpg" alt="img4" title="img4">
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+            <section class="b_section promotion_block1">
+                <div data-reactroot class="shd_box">
+                    <table width="100%" cellspacing="0" cellpadding="0" style="border: 0px;">
+                        <tbody>
+                            <tr>
+                                <td style="vertical-align: middle;">
+                                    <img src="img/Sizestore12312.jpg" alt="Main banner" title="Main banner">
+                                    
+                                </td>
+                                <td style="vertical-align: middle;">
+                                    <div class="tbl_wrap">
+                                        <table width="100%" cellspacing="10" cellpadding="0" style="border: 0px;">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/image 1.png" alt="Mens" title="Mens">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/image 2.png" alt="Womens" title="Womens">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/image 3.png" alt="">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/image 4.png" alt="Girls" title="Girls">
+
+                                                    </td>
+                                                    <td style="vertical-align: middle; text-align: center;">
+                                                        <a href="">View Collection</a>
+                                                        <img src="img/image 5.png" alt="5" title="5">
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+            <section class="b_section promotion_block">
+                <div data-reactroot class="shd_box">
+                    <div class="tab_carousel slick-slider">
+                        <ul>
+                            <li>
+                                <a href=""><img src="img/image 6.jpg" alt="Men Ethnic" title="Men Ethnic"></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="img/image 7.jpg" alt="Women Ethnic" title="Women Ethnic"></a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="b_section promotion_block">
+                <div data-reactroot class="shd_box">
+                    <ul>
+                        <li>
+                            <a href=""><img src="img/image 8.jpg" alt="Bedsheet" title="Bedsheet"></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="img/image 9.jpg" alt="BrandBanner2" title="BrandBanner2"></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </section>
+            <section class="b_section bnk_offers">
+                <div data-reactroot class="shd_box">
+                    <ul>
+                        <li>
+                            <a href=""><img src="img/covid20210610.jpg" alt="covid" title="covid" width="100%"></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="img/CovidUB.jpg" alt="covid" title="covid" width="100%"></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </section>
+            <section class="b_section cat_promotion_box" id="prsnl_10" style="display: block;">
+                <div class="tabbing">
+                    <h2></h2>
+                    <div class="tabbing_products" id="10">
+                        <div data-reactroot class="tabbing_products static_crow">
+                            <ul class="common_carousel" id="pr_10">
+                                <button type="button" data-pid="pr_10" class="slick-prev slick-arrow" style="display: inline-block;">
+                                    Previous
+
+                                </button>
+                                <li class>
+                                    <a href="" target="_blank">
+                                    <div class="img_wrap">
+                                        <img src="img/1 image.jpg" alt="banner">
+
+                                    </div>
+                                    <h4>
+                                        Pack of 2 Women Twist Green-Pink Round Neck Regular Fit T-Shirt
+                                    </h4>
+                                    <p>
+                                        Rs 575
+                                        <strike class="old_price"></strike>
+                                    </p>
+                                    <p class="discount_off"></p>
+                                </a>
+                                </li>
+                                <li class>
+                                    <a href="" target="_blank">
+                                        <div class="img_wrap">
+                                            <img src="img/2 image.jpg" alt="">
+                                        </div>
+                                        <h4>Pack of 2 Men Flick Round neck T-shirts</h4>
+                                        <p>
+                                            Rs 799
+                                            <strike clold_price="old_price"></strike>
+                                        </p>
+                                        <p class="discount_off"></p>
+                                    </a>
+
+                                </li>
+                                <li class>
+                                    <a href="" target="_blank">
+                                        <div class="img_wrap">
+                                            <img src="img/3 image.jpg" alt="">
+                                        </div>
+                                        <h4>Pack of 2 Infant Thrive Yellow-Navy Printed  Coordinated Sets</h4>
+                                        <p>
+                                            Rs 670
+                                            <strike clold_price="old_price"></strike>
+                                        </p>
+                                        <p class="discount_off"></p>
+                                    </a>
+
+                                </li>
+                                <li class>
+                                    <a href="" target="_blank">
+                                        <div class="img_wrap">
+                                            <img src="img/4 image.jpg" alt="">
+                                        </div>
+                                        <h4>Pack of 2 Infant Kidistan Peach-Pink Printed  Frock</h4>
+                                        <p>
+                                            Rs 239
+                                            <strike clold_price="old_price"></strike>
+                                        </p>
+                                        <p class="discount_off">20% off</p>
+                                    </a>
+
+                                </li>
+                                <li class>
+                                    <a href="" target="_blank">
+                                        <div class="img_wrap">
+                                            <img src="img/5 image.jpg" alt="">
+                                        </div>
+                                        <h4>Pack of 2 Boys Cline Black-Light Blue Medium Rise Relaxed Fit Jeans</h4>
+                                        <p>
+                                            Rs 900
+                                            <strike clold_price="old_price"></strike>
+                                        </p>
+                                        <p class="discount_off">15% off</p>
+                                    </a>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <footer>
+                <div class="footer_nav">
+                    <div class="wrapper">
+                        <section class="delivery_pro">
+                            <ul class="wrapper">
+                                <li>
+                                    <span>15 Days No question Asked Return Policy</span>
+                                </li>
+                                <li>
+                                    <span>Free shipping on orders above ₹599</span>
+                                </li>
+        
+                            </ul>
+                        </section>
+                        <div class="sc_callouts">
+                            <h4>Online Shoping</h4>
+                            <ul>
+                                <li>
+                                    <a href="" onclick="loginPopup('1');" >Logi/Sign Up</a>
+                                </li>
+                                <li>
+                                    <a href="">Track Order</a>
+                                </li>
+                                <li>
+                                    <a href="">My Order</a>
+                                </li>
+                                <li>
+                                    <a href="">My Whislist</a>
+                                </li>
+                                <li>
+                                    <a href="">Stores</a>
+                                </li>
+                            </ul>
+        
+                        </div>
+                        <div class="sc_callouts">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li>
+                                    <a href="">Term of use</a>
+                                </li>
+                                <li>
+                                    <a href="">Shipping Policy</a>
+                                </li>
+                                <li>
+                                    <a href="">Returns Policy</a>
+                                </li>
+                                <li>
+                                    <a href="">Refunds Policy</a>
+                                </li>
+                                <li>
+                                    <a href="">Exchange Policy</a>
+                                </li>
+                                <li>
+                                    <a href="">Privacy Policy</a>
+                                </li>
+                            </ul>
+        
+                        </div>
+                        <div class="sc_callouts">
+                            <h4>Know more</h4>
+                            <ul>
+                                <li>
+                                    <a href="" >About US</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="">Media</a>
+                                </li>
+                                <li>
+                                    <a href="">Career</a>
+                                </li>
+                                <li>
+                                    <a href="">CSR</a>
+                                </li>
+                                <li>
+                                    <a href="">Investor</a>
+                                </li>
+                                <li>
+                                    <a href="">Gift Card</a>
+                                </li>
+                                <li>
+                                    <a href="">Value Club Signup</a>
+                                </li>
+                                <li>
+                                    <a href="">About Value Club</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sc_callouts">
+                            <h4>Download App From</h4>
+                            <ul class="fapp_icon">
+                                <li>
+                                    <a href=""><img src="img/google_play_lg.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/apple_play_lg.png" alt=""></a>
+                                </li>
+        
+                            </ul>
+                            <div class="sc_socialconnection">
+                                <h3>Keep In Touch</h3>
+                                <ul>
+                                    <li>
+                                        <a href="" class="sc_ft_facebbok"><i class="fa-brands fa-facebook-square"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="sc_ft_facebbok"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="sc_ft_facebbok"><i class="fa-brands fa-youtube"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="sc_ft_facebbok"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="sc_ft_facebbok"><i class="fa-brands fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+        
+                            </div>
+        
+                        </div>
+        
+        
+        
+                    </div>
+        
+                </div>
+            </footer>
+            
+            
+        </div>
+        
+
+    </div>
+    
+    
+   
+    
+</body>
+</html>
